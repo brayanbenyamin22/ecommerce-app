@@ -28,7 +28,10 @@ export default function Cart() {
                         ? <>
                             <article className={styles.cartProductAdded}>
                                 <span className={styles.productImg}
-                                    style={{width: isMb ? 45 : isTb ? 45 : 45}}
+                                    style={{
+                                        width: isMb ? 45 : isTb ? 45 : 45,
+                                        height: isMb ? 45 : isTb ? 45 : 45
+                                    }}
                                 >
                                     <img src={productImg} alt="product" />
                                 </span>

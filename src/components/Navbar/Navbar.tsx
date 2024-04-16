@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import styles from './Navbar.module.css';
 import ScreenSize from '../../utils/ScreenSize';
 import { AppContext } from '../../app/context/AppContextProvider';
@@ -107,7 +107,10 @@ export default function Navbar() {
                             <img src={cartIcon} alt='cart icon logo' />
                         </span>
                         <span className={styles.profile}
-                            style={{height: isMb ? 35 : isTb ? 50: 50}}
+                            style={{
+                                width: isMb ? 35 : isTb ? 50: 50,
+                                height: isMb ? 35 : isTb ? 50: 50
+                            }}
                         >
                             <img src={profile} alt='profile pic' />
                         </span>
