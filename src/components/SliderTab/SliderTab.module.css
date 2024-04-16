@@ -1,0 +1,48 @@
+.sliderTabContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+.sliderTabContent {
+    position: relative;
+    z-index: 31;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 15px;
+}
+.closeIcon {
+    height: fit-content;
+}
+.closeIcon > img {
+    cursor: pointer;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(340deg) brightness(105%) contrast(105%);
+}
+.closeIcon > img:hover {
+    transition: all 0.2s ease-out;
+    filter: brightness(0) saturate(100%) invert(56%) sepia(76%) saturate(2143%) hue-rotate(346deg) brightness(100%) contrast(102%);
+}
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: var(--color-black);
+    opacity: 60%;
+}
+.sliderOpen {
+    display: flex;
+}
+.sliderClose {
+    display: none;
+}

@@ -1,0 +1,115 @@
+.sliderContainer {
+    width: fit-content;
+    /* height: 100%; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productImage > img, .options > img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+.productImage, .options {
+    cursor: pointer;
+}
+.productImage {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.productInView {
+    -webkit-animation: fade-in 0.3s ease-in both;
+	animation: fade-in 0.3s ease-in both;
+}
+.productChange {
+    -webkit-animation: fade-out 0.3s ease-in both;
+	animation: fade-out 0.3s ease-in both;
+}
+.selectorContainer {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* column-gap: 20px; */
+}
+.options {
+    position: relative;
+    border: 2px solid transparent;
+    overflow: hidden;
+    border-radius: 10px;
+    /* background-color: var(--color-lightGrayishBlue); */
+}
+.options::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--color-lightGrayishBlue); 
+}
+.optionBgOff {
+    background-color: transparent;
+}
+/* .options::before:hover {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+} */
+.optionSelected {
+    transition: all 0.2s ease-in;
+    border: 2px solid var(--color-orange);
+}
+.optionSelected > img {
+    opacity: 50%; /* 50% */
+}
+.options > img:hover {
+    transition: all 0.2s ease-in-out;
+    opacity: 50%; /* 50% */
+}
+.sliderTab {
+    justify-content: center;
+    column-gap: 20px;
+}
+@media screen and (max-width: 768px) {
+    .productImage, .options {
+        cursor: none;
+    }
+    .sliderItems {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 420px) {
+    .productImage {
+        min-width: 320px;
+        border-radius: unset;
+    }
+}
+@-webkit-keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 100%; }
+  }
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 100%; }
+  }
+  
+  @-webkit-keyframes fade-out {
+    0% { opacity: 100%; }
+    100% { opacity: 0; }
+  }
+  @keyframes fade-out {
+    0% { opacity: 100%; }
+    100% { opacity: 0; }
+  }

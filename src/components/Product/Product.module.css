@@ -1,0 +1,112 @@
+.productContainer {
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-bottom: 20px;
+}
+.companyName {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-orange);
+}
+.productName {
+    font-size: 40px;
+    font-weight: 700;
+    /* s */
+    color: var(--color-veryDarkBlue);
+}
+.productDescription {
+    text-align: justify;
+    color: var(--color-darkGrayishBlue);
+}
+.productPrice {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.productPriceContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.priceNow {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-veryDarkBlue);
+}
+.discount {
+    height: fit-content;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding-inline: 5px;
+    color: var(--color-orange);
+    background-color: var(--color-paleOrange);
+}
+.priceBefore {
+    font-weight: 700;
+    text-decoration: line-through;
+    color: var(--color-grayishBlue);
+}
+.productBtnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+/* Add Product BTN */
+.addProductBtn {
+    /* max-width: 150px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-inline: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--color-veryDarkBlue);
+    background-color: var(--color-lightGrayishBlue);
+}
+.btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 15px; /* 12px */
+    padding: 2px;
+}
+.btn > img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 768px) {
+    .productContainer {
+        padding-inline: 20px;
+    }
+    .productName {
+        font-size: 35px;
+    }
+    .productPriceContainer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .productBtnContainer {
+        column-gap: 10px;
+    }
+    .btn {
+        cursor: none;
+    }
+}
+@media screen and (max-width: 420px) {
+    .productName {
+        font-size: 30px;
+    }
+    .productDescription {
+        font-size: 14px;
+    }
+    .productBtnContainer {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}

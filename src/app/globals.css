@@ -1,0 +1,31 @@
+:root {
+  /* == Colors == */
+  /* - Primary */
+  --color-orange: hsl(26, 100%, 55%);
+  --color-paleOrange: hsl(25, 100%, 94%);
+  /* - Netral */
+  --color-veryDarkBlue: hsl(220, 13%, 13%);
+  --color-darkGrayishBlue: hsl(219, 9%, 45%);
+  --color-grayishBlue: hsl(220, 14%, 75%);
+  --color-lightGrayishBlue: hsl(223, 64%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+
+  /* == Typography == */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+  max-width: 1440px;
+}
+img {
+  user-select: none;
+}
