@@ -29,7 +29,7 @@ export default function Button({
     handle
 }:ButtonProps) {
     ScreenSize();
-    const {isMb, isTb, setBtnState, product, setCart} = useContext(AppContext);
+    const {isMb, isTb, /* setBtnState, product, setCart */} = useContext(AppContext);
 
     /* const handleAddToCart = () => {
         product > 0 ? setBtnState(false) : setBtnState(true);

@@ -1,6 +1,6 @@
 import './globals.css';
 import Navbar from "../components/Navbar/Navbar";
-import { AppContext, AppContextProvider } from './context/AppContextProvider';
+import { AppContextProvider } from './context/AppContextProvider';
 import Slider from '../components/Slider/Slider';
 import Layout from './Layout';
 import Product from '../components/Product/Product';
