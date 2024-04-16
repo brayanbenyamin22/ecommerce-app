@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext } from 'react';
 import styles from "./SliderButtons.module.css";
 import btn from "../../assets/icons/icon-previous.svg";
 import { AppContext } from '../../../../app/context/AppContextProvider';
@@ -8,7 +8,7 @@ interface SliderBtnsProps {
     handleOptions?: boolean;
 }
 export default function SliderButtons({handleOptions}: SliderBtnsProps) {
-    const {isMb, isTb, image, setImage, imageIndex, setImageIndex, setChangeImage, sliderTabState} = useContext(AppContext);
+    const { image, setImage, imageIndex, setImageIndex, setChangeImage } = useContext(AppContext);
     /* const [nextImg, setNextImg] = useState(0);
     const [prevImg, setPrevImg] = useState(0); */
     const handleChangeImage = () => {

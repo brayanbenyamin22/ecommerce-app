@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { AppContext } from '../../app/context/AppContextProvider';
 import styles from "./Product.module.css";
 import plusBtn from "./assets/icon-plus.svg";

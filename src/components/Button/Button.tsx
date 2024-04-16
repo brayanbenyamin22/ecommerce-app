@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useContext } from 'react';
+import { useContext } from 'react';
 import styles from "./Button.module.css";
 import ScreenSize from '../../utils/ScreenSize';
 import { AppContext } from '../../app/context/AppContextProvider';
@@ -31,10 +31,10 @@ export default function Button({
     ScreenSize();
     const {isMb, isTb, setBtnState, product, setCart} = useContext(AppContext);
 
-    const handleAddToCart = () => {
+    /* const handleAddToCart = () => {
         product > 0 ? setBtnState(false) : setBtnState(true);
         setCart(product);
-    }
+    } */
     
     return(
         <a className={styles.buttonContainer} href={href}

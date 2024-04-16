@@ -1,5 +1,5 @@
-import React, { createContext, useState, useEffect } from 'react';
-import { getLocalStorageItem } from '../../utils/localStorageUtils';
+import React, { createContext, useState } from 'react';
+/* import { getLocalStorageItem } from '../../utils/localStorageUtils'; */
 
 interface AppContextProps {
 /*     mostrarAnuncio: boolean;

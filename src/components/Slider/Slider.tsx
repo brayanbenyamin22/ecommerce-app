@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import styles from "./Slider.module.css";
 import { SLIDER_ITEMS } from './assets/info';
 import ScreenSize from '../../utils/ScreenSize';
